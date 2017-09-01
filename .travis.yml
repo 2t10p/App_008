@@ -1,7 +1,6 @@
 language: php
 
 php:
-  - '7.0'
   - '7.1'
 
 notifications:
@@ -12,7 +11,7 @@ notifications:
     on_failure: always
 
 install:
-  - composer install --prefer-dist --optimize-autoloader --quiet
+  - composer install --prefer-dist --no-dev --optimize-autoloader --quiet
 
 before_script:
   - cp .env.travis .env
