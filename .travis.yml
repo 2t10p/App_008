@@ -19,5 +19,4 @@ before_script:
   - php artisan config:clear
   - php artisan config:cache
 
-#script: ./vendor/bin/phpunit
 
