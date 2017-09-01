@@ -3,7 +3,9 @@ sudo: false
 dist: precise
 
 php:
+  - '7.0'
   - '7.1'
+  - '7.2'
 
 notifications:
   email:
@@ -21,5 +23,6 @@ before_script:
   - php artisan config:clear
   - php artisan config:cache
 
-
+script:
+  - ./vendor/bin/phpunit
 
