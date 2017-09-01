@@ -1,7 +1,9 @@
 language: php
+sudo: false
+dist: precise
 
 php:
-  - '7.0'
+  - '7.1'
 
 notifications:
   email:
@@ -18,5 +20,6 @@ before_script:
   - php artisan key:generate
   - php artisan config:clear
   - php artisan config:cache
+
 
 
