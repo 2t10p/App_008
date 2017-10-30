@@ -1,11 +1,8 @@
 language: php
-sudo: false
-dist: precise
-
 php:
-  - '7.0'
-  - '7.1'
-  - '7.2'
+  - '7'
+
+sudo: false
 
 notifications:
   email:
@@ -25,4 +22,16 @@ before_script:
 
 script:
   - ./vendor/bin/phpunit
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    recipients:
+      - wico0628@gmail.com
+    on_success: change
+    on_failure: always
+
 
