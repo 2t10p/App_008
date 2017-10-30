@@ -4,13 +4,6 @@ php:
 
 sudo: false
 
-notifications:
-  email:
-    recipients:
-      - wico0628@gmail.com
-    on_success: change
-    on_failure: always
-
 install:
   - composer install --prefer-dist --no-dev --optimize-autoloader --quiet
 
